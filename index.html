@@ -11,12 +11,13 @@
 <body class="bg-info">
   <nav class="navber navbar-expand-lg navbar-dark bg-dark p-1">
     <div class="container-fluid">
-      <div class="navbar-brand">キーボードをクリックすると音が鳴ります</div>
-   </div>
+      <div class="navbar-brand">キーボードをクリックすると単音が鳴ります</div>
+    </div>
   </nav>
 
   <!-- 鍵盤 C3～C6-->
   <div class="keyboard">
+    <!-- C3～ -->
     <!-- <div class="whiteKey key"></div>
     <div class="blackKey key"></div>
     <div class="whiteKey key"></div>
@@ -30,6 +31,7 @@
     <div class="blackKey key"></div>
     <div class="whiteKey key"></div> -->
 
+    <!-- C4~ -->
     <div class="whiteKey key" onclick="pianoC4play()"></div>
     <div class="blackKey key" onclick="pianoCsha4play()"></div>
     <div class="whiteKey key" onclick="pianoD4play()"></div>
@@ -43,6 +45,7 @@
     <div class="blackKey key" onclick="pianoAsha4play()"></div>
     <div class="whiteKey key" onclick="pianoB4play()"></div>
 
+    <!-- C5~ -->
     <div class="whiteKey key" onclick="pianoC5play()"></div>
     <!--
     <div class="blackKey key"></div>
@@ -59,11 +62,28 @@
     <div class="whiteKey key"></div> -->
   </div>
 
-  <!-- 
-  <div>コード追加予定</div>
+  <nav class="navber navbar-expand-lg navbar-dark bg-dark p-1 mb-3">
+    <div class="container-fluid">
+      <div class="navbar-brand">ボタンをクリックすると和音が鳴ります</div>
+    </div>
+  </nav>
 
-  <div>音色追加予定</div>
-  -->
+  <div class="chord">
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Cplay()">C</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Cshaplay()">C#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Dplay()">D</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Dshaplay()">D#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Eplay()">E</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Fplay()">F</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Fshaplay()">F#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Gplay()">G</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Gshaplay()">G#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Aplay()">A</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Ashaplay()">A#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Bplay()">B</button>
+  </div>
+
+  <!-- <div>音色追加予定</div> -->
 
   <script src="e-music.js"></script>
 </body>

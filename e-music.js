@@ -1,3 +1,5 @@
+//キーボード単音
+
 //C4
 function pianoC4play(){
   const pianoC4 = new Audio('./audio/piano/piano_C4.mp3');
@@ -77,13 +79,84 @@ function pianoC5play(){
 }
 
 
-//黒鍵で以下エラーが出る　ライブラリを使わないと解決しない？？
-//Uncaught (in promise) DOMException: Failed to load because no supported source was found.
 
+//コード和音
 
+//C
+function chord_Cplay(){
+  const chord_C = new Audio('./audio/accordion/accordion_chord_C.mp3');
+  chord_C.play();
+}
 
-// const sounds = ["C4.mp3", "C#4.mp3", "D4.mp3"];  //音源のファイル名リスト
-// const pathPiano = "./audio/piano/";  //ピアノ音源のパス
+//C#
+function chord_Cshaplay(){
+  const chord_Csha = new Audio('./audio/accordion/accordion_chord_Csha.mp3');
+  chord_Csha.play();
+}
+
+//D
+function chord_Dplay(){
+  const chord_D = new Audio('./audio/accordion/accordion_chord_D.mp3');
+  chord_D.play();
+}
+
+//D#
+function chord_Dshaplay(){
+  const chord_Dsha = new Audio('./audio/accordion/accordion_chord_Dsha.mp3');
+  chord_Dsha.play();
+}
+
+//E
+function chord_Eplay(){
+  const chord_E = new Audio('./audio/accordion/accordion_chord_E.mp3');
+  chord_E.play();
+}
+
+//F
+function chord_Fplay(){
+  const chord_F = new Audio('./audio/accordion/accordion_chord_F.mp3');
+  chord_F.play();
+}
+
+//F#
+function chord_Fshaplay(){
+  const chord_Fsha = new Audio('./audio/accordion/accordion_chord_Fsha.mp3');
+  chord_Fsha.play();
+}
+
+//G
+function chord_Gplay(){
+  const chord_G = new Audio('./audio/accordion/accordion_chord_G.mp3');
+  chord_G.play();
+}
+
+//G#
+function chord_Gshaplay(){
+  const chord_Gsha = new Audio('./audio/accordion/accordion_chord_Gsha.mp3');
+  chord_Gsha.play();
+}
+
+//A
+function chord_Aplay(){
+  const chord_A = new Audio('./audio/accordion/accordion_chord_A.mp3');
+  chord_A.play();
+}
+
+//A#
+function chord_Ashaplay(){
+  const chord_Asha = new Audio('./audio/accordion/accordion_chord_Asha.mp3');
+  chord_Asha.play();
+}
+
+//B
+function chord_Bplay(){
+  const chord_B = new Audio('./audio/accordion/accordion_chord_B.mp3');
+  chord_B.play();
+}
+
+// const sounds = ["C4", "Csha4", "D4", "Dsha4", "E4", "F4", "Fsha4", "G4", "Gsha4", "A4", "Asha4", "B4", "C5"];  //音源のファイル名リスト
+// const pathPiano = "./audio/piano/piano_";  //ピアノ音源のパス
+// const mp3 = ".mp3"
 // const soundsPiano = [];
 
 // sounds.forEach(sound => {
