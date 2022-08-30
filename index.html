@@ -32,18 +32,18 @@
     <div class="whiteKey key"></div> -->
 
     <!-- C4~ -->
-    <div class="whiteKey key" onclick="pianoC4play()"></div>
-    <div class="blackKey key" onclick="pianoCsha4play()"></div>
-    <div class="whiteKey key" onclick="pianoD4play()"></div>
-    <div class="blackKey key" onclick="pianoDsha4play()"></div>
-    <div class="whiteKey key" onclick="pianoE4play()"></div>
-    <div class="whiteKey key" onclick="pianoF4play()"></div>
-    <div class="blackKey key" onclick="pianoFsha4play()"></div>
-    <div class="whiteKey key" onclick="pianoG4play()"></div>
-    <div class="blackKey key" onclick="pianoGsha4play()"></div>
-    <div  class="whiteKey key" onclick="pianoA4play()"></div>
-    <div class="blackKey key" onclick="pianoAsha4play()"></div>
-    <div class="whiteKey key" onclick="pianoB4play()"></div>
+    <div class="whiteKey key" id="C4" onclick="pianoC4play()"></div>
+    <div class="blackKey key" id="Csha4" onclick="pianoCsha4play()"></div>
+    <div class="whiteKey key" id="D4" onclick="pianoD4play()"></div>
+    <div class="blackKey key" id="Dsha4" onclick="pianoDsha4play()"></div>
+    <div class="whiteKey key" id="E4" onclick="pianoE4play()"></div>
+    <div class="whiteKey key" id="F4" onclick="pianoF4play()"></div>
+    <div class="blackKey key" id="Fsha4" onclick="pianoFsha4play()"></div>
+    <div class="whiteKey key" id="G4" onclick="pianoG4play()"></div>
+    <div class="blackKey key" id="Gsha4" onclick="pianoGsha4play()"></div>
+    <div class="whiteKey key" id="A4" onclick="pianoA4play()"></div>
+    <div class="blackKey key" id="Asha4" onclick="pianoAsha4play()"></div>
+    <div class="whiteKey key" id="B4" onclick="pianoB4play()"></div>
 
     <!-- C5~ -->
     <div class="whiteKey key" onclick="pianoC5play()"></div>
@@ -68,22 +68,23 @@
     </div>
   </nav>
 
+  <!-- メジャーコード-->
   <div class="chord">
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Cplay()">C</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Cshaplay()">C#</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Dplay()">D</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Dshaplay()">D#</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Eplay()">E</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Fplay()">F</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Fshaplay()">F#</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Gplay()">G</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Gshaplay()">G#</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Aplay()">A</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Ashaplay()">A#</button>
-    <button type="button" class="btn btn-secondary btn-sm col-0.5" onclick="chord_Bplay()">B</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="C" onclick="chord_Cplay(this)">C</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="Csha" onclick="chord_Cshaplay()">C#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="D" onclick="chord_Dplay()">D</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="Dsha" onclick="chord_Dshaplay()">D#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="E" onclick="chord_Eplay()">E</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="F" onclick="chord_Fplay()">F</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="Fsha" onclick="chord_Fshaplay()">F#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="G" onclick="chord_Gplay()">G</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="Gsha" onclick="chord_Gshaplay()">G#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="A" onclick="chord_Aplay()">A</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="Asha" onclick="chord_Ashaplay()">A#</button>
+    <button type="button" class="btn btn-secondary btn-sm col-0.5" id="B" onclick="chord_Bplay()">B</button>
   </div>
 
-  <!-- <div>音色追加予定</div> -->
+  <!-- <div>音色選択追加予定</div> -->
 
   <script src="e-music.js"></script>
 </body>

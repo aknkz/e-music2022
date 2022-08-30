@@ -1,4 +1,4 @@
-//キーボード単音
+//キーボードがクリックされたら、キーに応じた単音を鳴らす関数
 
 //C4
 function pianoC4play(){
@@ -80,7 +80,7 @@ function pianoC5play(){
 
 
 
-//コード和音
+//コード(和音)のボタンがクリックされたら、ボタンに応じてコードを鳴らす関数
 
 //C
 function chord_Cplay(){
@@ -154,12 +154,42 @@ function chord_Bplay(){
   chord_B.play();
 }
 
-// const sounds = ["C4", "Csha4", "D4", "Dsha4", "E4", "F4", "Fsha4", "G4", "Gsha4", "A4", "Asha4", "B4", "C5"];  //音源のファイル名リスト
-// const pathPiano = "./audio/piano/piano_";  //ピアノ音源のパス
-// const mp3 = ".mp3"
-// const soundsPiano = [];
 
-// sounds.forEach(sound => {
-//   let soundPiano = new Audio(pathPiano + sound);
-//   soundsPiano.push(soundPiano);
-// })
+/*
+//上記をループ処理で実現したい↓
+//ピアノ単音音源のファイル名リスト
+const singleNotes = ["C4", "Csha4", "D4", "Dsha4", "E4", "F4", "Fsha4", "G4", "Gsha4", "A4", "Asha4", "B4", "C5"]; 
+//ピアノ音源の共通パス
+const pathPiano = "./adio/piano/piano_";
+//拡張子
+const mp3 = ".mp3"
+//ピアノ単音音源のパスリスト
+const soundsPiano = [];
+singleNotes.forEach(note => {
+  let soundPiano = new Audio(pathPiano + note + mp3);
+  soundsPiano.push(soundPiano);
+})
+
+//ループで連想配列を作る(？)
+const testMap = new Map();
+const i = 1
+singleNotes.forEach(sn => {
+  testMap.set(sn,i);
+  i += 1;
+  }
+);
+
+//クリックした要素のidを取得
+let keyboard = document.getElementsByClassName('keyboard');
+keyboard.addEventlistener('click', (e) => {
+    console.log(e.target.id)
+  }
+);
+
+//onclickで引数を渡したいが渡せない。何故かundefinedになる
+
+//音を鳴らす関数
+function soundplay(sound){
+  soundPiano.play();
+} 
+*/
